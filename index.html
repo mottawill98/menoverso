@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mapa de Marketing — MenoCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <svg class="deco" viewBox="0 0 800 300" preserveAspectRatio="xMaxYMin slice" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="700" cy="40" r="120" fill="#ffffff" opacity="0.10"/>
+      <circle cx="770" cy="160" r="70" fill="#ffffff" opacity="0.10"/>
+      <path d="M620 210 C640 180 690 180 700 215 C710 180 760 180 775 215 C785 240 750 265 700 285 C650 265 610 240 620 210 Z" fill="#ffffff" opacity="0.12"/>
+      <path d="M120 -10 C150 20 150 60 120 90 C90 60 90 20 120 -10 Z" fill="#ffffff" opacity="0.08" transform="rotate(20 120 40)"/>
+      <path d="M40 220 C60 200 95 200 100 225 C105 200 140 200 150 225 C155 245 130 265 100 278 C70 265 35 245 40 220 Z" fill="#ffffff" opacity="0.09"/>
+    </svg>
+    <div class="hero-content">
+      <span class="brandmark"><span class="dot"></span> MenoCare · Marketing</span>
+      <h1>Mapa de Marketing</h1>
+      <p>Todas as frentes de marketing da MenoCare, com subtarefas, status, responsável e observações — clique em cada área para abrir.</p>
+
+      <div class="stats">
+        <div class="stat"><b id="statTotal">0</b><span>itens mapeados</span></div>
+        <div class="stat"><b id="statDone">0</b><span>concluídos</span></div>
+        <div class="stat"><b id="statProgress">0</b><span>em andamento</span></div>
+        <div class="stat"><b id="statPct">0%</b><span>do mapa completo</span></div>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <span class="toolbar-note" id="syncNote">Conectando ao banco compartilhado…</span>
+    <button class="btn-reset" id="resetBtn" type="button">Limpar tudo</button>
+  </div>
+
+  <div id="categories"></div>
+
+  <footer>Manual de marca MenoCare aplicado · roxo #402768 · pink #ef54b4</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
